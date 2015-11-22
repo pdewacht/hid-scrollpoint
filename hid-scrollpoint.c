@@ -35,6 +35,8 @@ static int scrollpoint_input_mapping(struct hid_device *hdev,
 }
 
 static const struct hid_device_id scrollpoint_devices[] = {
+	{ HID_USB_DEVICE(USB_VENDOR_ID_LENOVO,
+		USB_DEVICE_ID_LENOVO_SCROLLPOINT_OPTICAL) },
 	{ HID_USB_DEVICE(USB_VENDOR_ID_IBM,
 		USB_DEVICE_ID_IBM_SCROLLPOINT_III) },
 	{ HID_USB_DEVICE(USB_VENDOR_ID_IBM,
