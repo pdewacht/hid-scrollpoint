@@ -8,7 +8,7 @@ This repo contains a kernel module to enable horizontal scrolling. This was merg
 
 ### Older kernels
 
-If for some reason you're stuck on an kernel before 4.17, you can compile this module.
+If for some reason you're stuck on a kernel before 4.17, you can compile this module.
 
 You'll also need to install some udev rules, to force Linux to actually use this driver. Without this, Linux will still use the generic driver. Create a file `/etc/udev/rules.d/99-scrollpoint.rules`:
 
@@ -18,7 +18,7 @@ You'll also need to install some udev rules, to force Linux to actually use this
 
 Replace the USB vendor and product IDs with those for your mouse. Then run `udevadm control --reload`.    
 
-## Sensitivitiy (libinput)
+## Sensitivity (libinput)
 
 Peter Ganzhorn contributed a patch to libinput 1.11 to fix Scrollpoint sensitivity. From that release on, scroll sensitivity should be fine out of the box. (libinput is used by current Xorg and by Wayland.)
 
